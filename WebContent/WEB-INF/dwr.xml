@@ -1,0 +1,39 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+  <allow>
+  
+    <create creator="new" javascript="JUserAccess">
+      <param name="class" value="com.mat.dwr.access.UserAccess"/>
+    </create>
+    
+    
+    <create creator="new" javascript="DwrDeployment">
+      <param name="class" value="com.mat.java.ReDeployment"/>
+    </create>
+    
+    <create creator="new" javascript="DwrFileService">
+      <param name="class" value="com.mat.util.FileService"/>
+    </create>
+    
+    <create creator="new" javascript="DwrProcess">
+      <param name="class" value="com.mat.java.Process"/>
+    </create>
+    
+     <create creator="new" javascript="DwrUser">
+      <param name="class" value="com.mat.java.IdUser"/>
+    </create>
+    
+    <create creator="new" javascript="DwrGroup">
+      <param name="class" value="com.mat.java.IdGroup"/>
+    </create>
+    
+    <create creator="new" javascript="DwrTask">
+      <param name="class" value="com.mat.java.RuTask"/>
+    </create>
+    
+    <convert match="com.mat.model.UserMod" converter="bean"></convert>
+  </allow>
+</dwr>
